@@ -28,37 +28,24 @@ main {
     overflow-y: hidden;
 }
 
+.standard_link {
+    text-decoration: none;
+}
+
 /* main_nav */
 .main_nav {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     float: left;
-    position: relative;
+    display:flex;
+    flex-direction: column;
     height: 100%;
     width: 300px;
     overflow-y: hidden;
     background-color: black;
-    color: white;
+    color: #A3A3A3;
 }
 
-.logo img {
-    height: 60px;
-}
-
-.nav_menu_logo {
-    height: 40px;
-    margin-right: 5px;
-}
-
-.home_list li {
-    list-style: none;
-}
-
-.home_list li a {
-    display: flex;
-    align-items: center;
-    color: white;
+.main_nav a {
+    color: #A3A3A3;
     text-decoration: none;
     font-weight: 500;
 }
@@ -66,32 +53,79 @@ main {
 .nav_item {
     width: 100%;
     padding: 15px;
-    border: 1px solid green;
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+.nav_menu_icon {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.home_list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.playlist_create .fa-plus {
+    color: black;
+    background-color: #A3A3A3;
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 8px;
 }
 
 .playlist_list {
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 100px;
+    overflow: auto;
+}
+.playlist_list a {
+    margin: 5px 0;
+}
+.playlist_list ul li{
+    list-style: none;
 }
 
 .utente {
-    position: absolute;
-    bottom: 0;
     background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .utente img {
     height: 40px;
+    width: 40px;
     border-radius: 100%;
     background: grey;
     vertical-align: middle;
+    margin-right: 8px;
 }
 
 /* main_content */
 .main_content {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: calc(100% - 300px);
     overflow-y: auto;
     background-color: darkgrey;
+}
+
+.head_cont, 
+.foot_cont {
+    height: 100px;
+}
+.central {
+    flex: 1 1 auto;
+    overflow-y: scroll;
 }
 
 
