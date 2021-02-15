@@ -50,9 +50,24 @@ main {
     font-weight: 500;
 }
 
+.main_nav img {
+    vertical-align: middle;
+}
+
+.main_nav a:hover {
+    color: white;
+}
+.main_nav a:hover .fa-plus {
+    background-color: white;
+}
+
+.link_home {
+    border-left: 2px solid #ADFE2E;
+}
+
 .nav_item {
     width: 100%;
-    padding: 15px;
+    padding: 5px 15px;
 }
 
 
@@ -61,7 +76,7 @@ main {
 }
 
 .nav_menu_icon {
-    height: 40px;
+    height: 30px;
     margin-right: 8px;
 }
 
@@ -74,9 +89,14 @@ main {
 .playlist_create .fa-plus {
     color: black;
     background-color: #A3A3A3;
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
     margin-right: 8px;
+}
+
+.playlist h4 {
+    color: white;
+    text-transform: uppercase;
 }
 
 .playlist_list {
@@ -93,20 +113,71 @@ main {
     list-style: none;
 }
 
+.bottom_nav {
+    padding: 0 15px;
+}
+.download {
+    padding: 15px 0;
+    border-bottom: 1px solid #A3A3A3;
+}
+
+.download img {
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 .utente {
-    background: black;
+    padding: 15px 0;
     color: white;
     font-size: 18px;
     font-weight: 600;
 }
 
 .utente img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     background: grey;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+/* little nav */
+.little_nav {
+    float: left;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 80px;
+    overflow-y: hidden;
+    background-color: black;
+    color: #A3A3A3;
+    align-items: center;
+}
+
+.l_nav_item {
+    width: 40%;
+    flex-basis: 40px;
+}
+.down {
+    width: 25%;
+}
+.little_nav img {
+    width: 100%;
+}
+
+.profile img{
+    border-radius: 100%;
+    background: grey;
+}
+
+.stretch {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 100px;
+    overflow: auto;
 }
 
 /* main_content */
@@ -151,3 +222,15 @@ footer {
     background-color: pink;
 }
 
+@media screen and (max-width:600px) {
+    .flip {
+        display: flex;
+        align-items: center;
+    }
+    .hide {
+        display: none;
+    }
+    .main_content {
+        width: calc(100% - 80px);
+    }
+}
