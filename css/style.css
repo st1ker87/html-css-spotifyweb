@@ -457,20 +457,16 @@ footer {
         width: calc(100% - 80px);
     }
 
-    .song_item {
-        width: calc(100% / 2);
-    }
-
     .song_list {
         flex-wrap: wrap;
     }
 
 }
 
-/* RESPONSIVE xs */
-@media screen and (min-width:600px) and (max-width:768px) {
+/* RESPONSIVE md */
+@media screen and (max-width:1200px) {
     .song_item {
-        width: calc(100% / 2);
+        flex-basis: calc(100% / 4);
     }
 
     .song_list {
@@ -479,9 +475,9 @@ footer {
 }
 
 /* RESPONSIVE sm */
-@media screen and (min-width:768px) and (max-width:900px) {
+@media screen and (max-width:991px) {
     .song_item {
-        width: calc(100% / 2);
+        flex-basis: calc(100% / 2);
     }
 
     .song_list {
@@ -489,10 +485,12 @@ footer {
     }
 }
 
-/* RESPONSIVE md */
-@media screen and (min-width:900px) and (max-width:1170px) {
+
+
+/* RESPONSIVE xs */
+@media screen and (max-width:800px) {
     .song_item {
-        width: calc(100% / 4);
+        flex-basis: calc(100% / 2);
     }
 
     .song_list {
