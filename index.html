@@ -53,7 +53,129 @@
 
             <!-- contenitore principale -->
             <div class="main_content">
-                
+                <!-- barra con trasparenza e bottone -->
+                <div class="head_cont">
+                    <a class="btn_upgrade" href="#">Effettua l'Upgrade</a>
+                </div><!-- fine barra con trasparenza-->
+
+                <!-- contenitore con cover playlist-->
+                <div class="central">
+                    <!-- menu di ricerca canzoni -->
+                    <ul class="nav_central">
+                        <li class="menu_el"><a href=""><h5>in evidenza</h4></a><span></span></li>
+                        <li class="menu_el"><a href=""><h5>podcast</h4></a></li>
+                        <li class="menu_el"><a href=""><h5>classifiche</h4></a></li>
+                        <li class="menu_el"><a href=""><h5>generi e mood</h4></a></li>
+                        <li class="menu_el"><a href=""><h5>nuove uscite</h4></a></li>
+                        <li class="menu_el"><a href=""><h5>scopri</h4></a></li>
+                    </ul> <!-- fine menu di ricerca canzoni-->
+
+                    <h2>Recently Played</h2>
+
+                    <!-- lista recently played -->
+                    <ul class="song_list">
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/metal_lifting.jpg" alt="metal_lifting">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            
+                            <h4 class="song_title">Heavy Metal</h4>
+                            <h5 class="song_subtitle">Subtitle</h5>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                        
+                            <h4 class="song_title">Stranger Things, Vol. 1(a Netflix original series.</h4>
+                            <h5 class="song_subtitle">Subtitle</h5>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                        
+                            <h4 class="song_title">Stranger Things, Vol. 1(a Netflix original series.</h4>
+                            <h5 class="song_subtitle">Subtitle</h5>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                        
+                            <h4 class="song_title">Stranger Things, Vol. 1(a Netflix original series.</h4>
+                            <h5 class="song_subtitle">Subtitle</h5>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                        
+                            <h4 class="song_title">Stranger Things, Vol. 1(a Netflix original series.</h4>
+                            <h5 class="song_subtitle">Subtitle</h5>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                        
+                            <h4 class="song_title">Stranger Things, Vol. 1(a Netflix original series.</h4>
+                            <h5 class="song_subtitle">Subtitle</h5>
+                        </li>
+                    </ul> <!-- fine lista recently played-->
+
+                    <h2>Creato per John Doe</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+
+                    <!-- lista radar -->
+                    <ul class="song_list">
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/metal_lifting.jpg" alt="metal_lifting">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                    
+                            <h4 class="song_title">Heavy Metal</h4>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                    
+                            <h4 class="song_title">Stranger Things, Vol. 1(a Netflix original series.</h4>
+                        </li>
+                    </ul>
+
+                    <h2>Artisti più popolari</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+
+                    <!-- lista artisti popolari -->
+                    <ul id="popolar_artists" class="song_list">
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/einaudi.jpeg" alt="einaudi">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                    
+                            <h4 class="song_title">Einaudi</h4>
+                        </li>
+                        <li class="song_item clearfix">
+                            <div class="song_cover">
+                                <img src="img/youg.jpeg" alt="youg">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                    
+                            <h4 class="song_title">Young & Beautiful</h4>
+                        </li>
+                    </ul>
+                </div> <!-- fine contenitore con cover e playlist-->
             </div> <!-- /contenitore principale-->
         
         </main>
@@ -81,7 +203,10 @@
                 </div>
                 <div class="info_bar">
                     <div>0.25</div>
-                    <div class="status_bar"></div>
+                    <div class="status_bar">
+                        <span class="advance_bar"></span>
+                        <span class="pointer"></span>
+                    </div>
                     <div>4:23</div>
                 </div>
             </div>
@@ -89,7 +214,10 @@
                 <i class="fas fa-list"></i>
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-up"></i>
-                <div class="volume_bar"></div>
+                <div class="volume_bar">
+                    <span class="advance_bar"></span>
+                    <span class="pointer"></span>
+                </div>
             </div>
         </footer> <!-- /footer -->
     </div>
